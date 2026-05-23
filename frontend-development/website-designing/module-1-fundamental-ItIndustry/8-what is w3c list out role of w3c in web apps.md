@@ -1,25 +1,30 @@
 ```markdown
-# What is W3C?
+# What is W3C and its role in web apps
 
-W3C (World Wide Web Consortium) is the main international standards organization for the World Wide Web. It develops protocols, guidelines, and specifications to ensure long-term growth of the Web.
+W3C (World Wide Web Consortium) is the main international standards organization for the Web. It develops open standards to ensure long-term growth of the Web.
 
-# Roles of W3C in Web Apps
+Key roles of W3C in web apps:
 
-- Define open standards and specifications (HTML, CSS, DOM, XML, ARIA, etc.) that ensure interoperability across browsers and platforms.
+- Standards development: Creates and maintains core specifications (HTML, CSS, DOM, XML, HTTP-related recommendations).
 
-- Promote accessibility (WCAG guidelines) to make web apps usable by people with disabilities.
+- Interoperability: Ensures consistent behavior across browsers and platforms so web apps work reliably for all users.
 
-- Ensure compatibility and interoperability so web apps behave consistently across different user agents and devices.
+- Accessibility: Publishes WCAG guidelines to make web apps usable by people with disabilities.
 
-- Provide best practices and recommendations for security, privacy, and performance.
+- Web architecture & APIs: Defines APIs and platform features (e.g., Web Components, Service Workers) that enable modern web apps.
 
-- Foster internationalization and localization to support multiple languages and regions.
+- Security & privacy guidance: Produces best practices and recommendations to improve security and user privacy.
 
-- Maintain developer-facing APIs and specifications (e.g., WebRTC, Web Components) to enable rich web app features.
+- Internationalization: Provides guidance and standards to support global languages, scripts, and formats.
 
-- Host working groups and community process for collaborative, transparent standard development.
+- Validation & conformance: Offers validators and conformance criteria to help developers follow standards.
 
-- Provide test suites and validation tools to help implementers verify compliance with standards.
+- Education & community: Publishes tutorials, notes, and engages with browser vendors, developers, and organizations to drive adoption.
 
-These roles help web apps remain open, accessible, secure, and interoperable across the global web ecosystem.
+Why this matters for web app developers:
+
+- Predictability: Standards reduce cross-browser surprises.
+- Accessibility: Following WCAG increases audience reach and legal compliance.
+- Future-proofing: Standards evolve to support new capabilities while preserving compatibility.
+
 ```
