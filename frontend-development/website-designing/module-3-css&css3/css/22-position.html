@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        h1 {
+            color: #333;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            color: #555;
+            margin-top: 20px;
+        }
+        
+        /* Static Position (Default) */
+        .static-box {
+            position: static;
+            background-color: #e3f2fd;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #2196f3;
+        }
+        
+        /* Relative Position */
+        .relative-box {
+            position: relative;
+            top: 20px;
+            left: 30px;
+            background-color: #f3e5f5;
+            padding: 35px;
+            margin: 30px 0;
+            border: 2px solid #9c27b0;
+        }
+        
+        /* Absolute Position */
+        .absolute-container {
+            position: relative;
+            background-color: #fff3e0;
+            padding: 20px;
+            margin: 10px 0;
+            border: 2px solid #ff9800;
+            height: 150px;
+        }
+        
+        .absolute-box {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #ffe0b2;
+            padding: 10px;
+            border: 2px solid #ff6f00;
+        }
+        
+        /* Fixed Position */
+        .fixed-box {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #c8e6c9;
+            padding: 10px;
+            border: 2px solid #4caf50;
+            z-index: 1000;
+        }
+        
+        /* Sticky Position */
+        .sticky-box {
+            position: sticky;
+            top: 0;
+            background-color: #f0f4c3;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #cddc39;
+            z-index: 100;
+        }
+        
+        code {
+            background-color: #f4f4f4;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        
+        ul {
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Position Property</h1>
+    
+    <div class="container">
+        <h2>What is Position in CSS?</h2>
+        <p>
+            The <code>position</code> property in CSS specifies how an element is positioned in the document. 
+            It determines how an element's location is calculated on the page and whether it participates in 
+            the normal document flow or is taken out of the flow.
+        </p>
+    </div>
+    
+    <div class="container">
+        <h2>Types of CSS Position Values</h2>
+        
+        <h3>1. Static (Default)</h3>
+        <p>Elements are positioned according to the normal document flow. Properties like <code>top</code>, <code>bottom</code>, <code>left</code>, and <code>right</code> have no effect.</p>
+
+        <div class="static-box">This is a static positioned element (default behavior)</div>
+        
+        <h3>2. Relative</h3>
+        <p>An element is positioned relative to its normal position. The element still occupies space in the normal flow, but can be offset using <code>top</code>, <code>bottom</code>, <code>left</code>, and <code>right</code> properties.</p>
+        
+        <div class="relative-box">This element is relatively positioned (moved 20px down and 30px right)</div>
+        
+        <h3>3. Absolute</h3>
+        <p>An element is removed from the normal document flow and positioned relative to its nearest positioned ancestor. If no positioned ancestor exists, it's positioned relative to the document body. Uses <code>top</code>, <code>bottom</code>, <code>left</code>, and <code>right</code> for placement.</p>
+        
+        <div class="absolute-container">
+            This is a relatively positioned container
+            <div class="absolute-box">Absolutely positioned element (top: 10px, right: 10px)</div>
+        </div>
+        
+        <h3>4. Fixed</h3>
+        <p>An element is removed from the normal flow and positioned relative to the viewport. It stays in the same position even when the page is scrolled. Uses <code>top</code>, <code>bottom</code>, <code>left</code>, and <code>right</code> for placement.</p>
+        <p><em>Note: A fixed element is visible in the top-right corner of the screen. Try scrolling to see it stay in place!</em></p>
+        
+        <h3>5. Sticky</h3>
+        <p>An element is positioned based on the user's scroll position. It toggles between relative and fixed positioning depending on where the element is in the viewport. Works with <code>top</code>, <code>bottom</code>, <code>left</code>, and <code>right</code>.</p>
+        <div class="sticky-box">This is a sticky positioned element (stays at top when scrolling)</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    
+    <div class="container">
+        <h2>Summary Table</h2>
+        <table border="1" cellpadding="10" style="width: 100%; border-collapse: collapse;">
+            <tr style="background-color: #007bff; color: white;">
+                <th>Position Value</th>
+                <th>Normal Flow</th>
+                <th>Positioned Against</th>
+                <th>Common Use Case</th>
+            </tr>
+            <tr>
+                <td><code>static</code></td>
+                <td>Yes (Default)</td>
+                <td>N/A</td>
+                <td>Default behavior</td>
+            </tr>
+            <tr>
+                <td><code>relative</code></td>
+                <td>Yes</td>
+                <td>Its normal position</td>
+                <td>Small adjustments to element position</td>
+            </tr>
+            <tr>
+                <td><code>absolute</code></td>
+                <td>No</td>
+                <td>Nearest positioned ancestor</td>
+                <td>Overlays, dropdowns, modals</td>
+            </tr>
+            <tr>
+                <td><code>fixed</code></td>
+                <td>No</td>
+                <td>Viewport</td>
+                <td>Fixed headers, navigation bars, floating buttons</td>
+            </tr>
+            <tr>
+                <td><code>sticky</code></td>
+                <td>Yes (Until threshold)</td>
+                <td>Viewport after scrolling threshold</td>
+                <td>Sticky headers, table headers</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
