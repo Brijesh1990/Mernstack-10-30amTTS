@@ -5,7 +5,7 @@ CSS (Cascading Style Sheets) is the standard style sheet language used to descri
 - Selectors level 3 and 4
 - Rounded corners with `border-radius`
 - Box shadows with `box-shadow`
-- Gradients
+- Gradients (multiple background color ya text color used)
 - Transitions and animations
 - Media queries for responsive design
 - Flexbox and Grid layout modules

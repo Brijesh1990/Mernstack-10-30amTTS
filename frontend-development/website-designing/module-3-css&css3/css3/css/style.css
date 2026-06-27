@@ -1,0 +1,58 @@
+/* gradients : set multiple background color  
+   types of gradients :  There are two types of gradients 
+
+                         1) linear gradients 
+                         2) radial gradients 
+
+*/
+
+body 
+{
+width: 100%;
+height: 100vh;
+overflow-x: hidden;
+/* background: -webkit-linear-gradient(red,black);
+background: -moz-linear-gradient(red,black);
+background: -IE-linear-gradient(red,black);
+background: -o-linear-gradient(red,black);   
+background: linear-gradient(red,black);  */
+/* 
+background: -webkit-linear-gradient(red,black,yellow);
+background: -moz-linear-gradient(red,black,yellow);
+background: -IE-linear-gradient(red,black,yellow);
+background: -o-linear-gradient(red,black,yellow);   
+background: linear-gradient(red,black,yellow);  */
+
+/* 
+
+background: -webkit-linear-gradient(left,red,black);
+background: -moz-linear-gradient(left,red,black);
+background: -IE-linear-gradient(left,red,black);
+background: -o-linear-gradient(left,red,black);   
+background: linear-gradient(to right,red,black);  */
+/* 
+
+background: -webkit-linear-gradient(left,red 50%,black 50%);
+background: -moz-linear-gradient(left,red 50%,black 50%);
+background: -IE-linear-gradient(left,red 50%,black 50%);
+background: -o-linear-gradient(left,red 50%,black 50%);   
+background: linear-gradient(to right,red 50%,black 50%);  */
+
+
+
+/* 
+background: -webkit-radial-gradient(left,red 50%,black 50%);
+background: -moz-radial-gradient(left,red 50%,black 50%);
+background: -IE-radial-gradient(left,red 50%,black 50%);
+background: -o-radial-gradient(left,red 50%,black 50%);   
+background: radial-gradient(to right,red 50%,black 50%);  */
+
+
+
+background: -webkit-radial-gradient(left,red,black, coral, yellow);
+background: -moz-radial-gradient(left,red,black, coral, yellow);
+background: -IE-radial-gradient(left,red,black, coral, yellow);
+background: -o-radial-gradient(left,red,black, coral, yellow);   
+background: radial-gradient(to right,red,black, coral, yellow); 
+
+}

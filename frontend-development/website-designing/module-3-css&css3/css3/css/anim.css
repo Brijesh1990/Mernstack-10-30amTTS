@@ -1,0 +1,63 @@
+body 
+{
+width: 100%;
+height: 100vh;
+background: url('https://images.pexels.com/photos/2680270/pexels-photo-2680270.jpeg') no-repeat;    
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+animation: 3s pulse infinite;
+}
+
+.app 
+{
+width: 30%;
+height: auto;
+margin: auto;
+margin-top: 5%;    
+/* animation: 2s fadeInLeft alternate;    */
+/* animation: 2s fadeInRight alternate; */
+animation: 2s fadeInUp alternate;
+background-color: white;
+padding: 25px;
+}
+.app h1 
+{
+font-size: 65px;
+font-weight: bolder;    
+/*animation: 2s bounce alternate;*/
+animation: 8s flash infinite;
+}
+.app input
+{
+width: 80%;
+height: auto;
+padding: 8px;
+border: 0;
+border-bottom: solid 2px black;    
+}
+.app input[type="submit"]
+{
+width: 25%;
+height: auto;
+border: 0;
+padding: 12px;
+background-color: black;
+color: white; 
+animation: 5s jello infinite;   
+}
+.app input[type="reset"]
+{
+width: 25%;
+height: auto;
+border: 0;
+padding: 12px;
+background-color: red;
+color: white;    
+animation: 5s jello infinite;  
+}
+
+/* .app
+{
+ animation: 2s fadeInLeft alternate;   
+} */
